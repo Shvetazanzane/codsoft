@@ -1,0 +1,188 @@
+/* portfolio.css */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set basic styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(135deg, #4CAF50, #1E88E5); /* New color scheme */
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.3em;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* About section */
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.about img {
+    max-width: 300px; /* Increased image size */
+    height: 300px; /* Set height to match new width */
+    border-radius: 50%; /* Circular shape */
+    margin-top: 20px;
+    border: 8px solid #fff; /* White border around the image */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Skills section */
+.skills {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skills li {
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills li:hover {
+    background-color: #fff;
+    color: #1E88E5; /* Changed hover color */
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/* Projects section */
+.projects {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.projects .project {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects .project h3 {
+    font-size: 1.8em;
+    color: #FFEB3B; /* Yellow color for project title */
+    text-transform: uppercase;
+}
+
+.projects .project p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Resume section */
+.resume {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.resume a {
+    text-decoration: none;
+    background-color: #FFEB3B; /* Yellow button */
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.resume a:hover {
+    background-color: #1E88E5; /* Blue on hover */
+    color: #fff;
+}
+
+/* Contact section */
+.contact {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+/* Add subtle hover effects to the footer */
+footer p:hover {
+    color: #FFEB3B; /* Yellow color for hover effect */
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+/* Reset and setup base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+    width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display area */
+#result {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 24px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Button styles */
+button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button active effects */
+button:active {
+    background-color: #388e3c;
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button for operators (like +, -, etc.) */
+button.operator {
+    background-color: #ff9800;
+}
+
+button.operator:hover {
+    background-color: #f57c00;
+}
+
+button.operator:active {
+    background-color: #e65100;
+}
+
+/* Clear and equal button */
+button.clear {
+    background-color: #f44336;
+}
+
+button.clear:hover {
+    background-color: #d32f2f;
+}
+
+button.clear:active {
+    background-color: #b71c1c;
+}
+
+button.equal {
+    background-color: #2196F3;
+}
+
+button.equal:hover {
+    background-color: #1976D2;
+}
+
+button.equal:active {
+    background-color: #1565C0;
+}
